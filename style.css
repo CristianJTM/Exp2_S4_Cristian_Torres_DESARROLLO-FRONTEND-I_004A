@@ -263,7 +263,7 @@ main {
 @media (max-width: 800px) {
 
     .lista-productos {
-        grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
     }
 
     .encabezado h1 {
@@ -276,6 +276,10 @@ main {
 }
 
 @media (max-width: 500px) {
+
+    .lista-productos {
+        grid-template-columns: 1fr;
+    }
 
     .navegacion ul {
         flex-direction: column;
